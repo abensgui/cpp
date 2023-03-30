@@ -3,7 +3,6 @@
 Animal::Animal()
 {
 	std::cout << "Default constructor Animal called\n";
-	Type = "";
 }
 
 Animal::Animal(std::string t)
@@ -40,4 +39,3 @@ void Animal::setType(std::string t)
 {
 	this->Type = t;
 }
-

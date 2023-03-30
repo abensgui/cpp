@@ -6,7 +6,7 @@
 class Dog : public Animal
 {
 private:
-	Brain* b;
+	Brain* B;
 public:
 	Dog(/* args */);
 	Dog(std::string t);

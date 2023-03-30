@@ -6,7 +6,7 @@
 class Cat : public Animal
 {
 private:
-	Brain* b;
+	Brain* B;
 
 public:
 	Cat(/* args */);

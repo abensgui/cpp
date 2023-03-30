@@ -5,11 +5,13 @@
 class Brain
 {
 private:
-    std::string Ideas[100];
+    std::string ideas[100];
 public:
     Brain(/* args */);
     Brain(Brain const &b);
     Brain &operator=(Brain const &b);
+    std::string getId(int i) const;
+    void setId(int i, std::string id);
     ~Brain();
 };
 

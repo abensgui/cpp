@@ -6,7 +6,7 @@
 class Cat : public Animal
 {
 private:
-	Brain* b;
+	Brain* B;
 
 public:
 	Cat(/* args */);
@@ -14,6 +14,6 @@ public:
 	Cat(Cat const &a);
 	Cat &operator=(Cat const &a);
 	~Cat();
-	void makeSound();
+	void makeSound() const;
 };
 #endif

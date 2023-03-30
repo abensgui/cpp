@@ -32,3 +32,18 @@ Brain::~Brain()
 {
 	std::cout << "Destructor Brain called\n";
 }
+
+
+std::string Brain::getId(int i) const
+{
+    if(i > 0 && i < 100)
+        return this->ideas[i];
+    else
+        return 0;
+}
+
+void Brain::setId(int i, std::string id)
+{
+    if(i > 0 && i < 100)
+        this->ideas[i] = id;
+}

@@ -36,10 +36,14 @@ Brain::~Brain()
 
 std::string Brain::getId(int i) const
 {
-    return this->ideas[i];
+    if(i > 0 && i < 100)
+        return this->ideas[i];
+    else
+        return 0;
 }
 
 void Brain::setId(int i, std::string id)
 {
-    this->ideas[i] = id;
+    if(i > 0 && i < 100)
+        this->ideas[i] = id;
 }

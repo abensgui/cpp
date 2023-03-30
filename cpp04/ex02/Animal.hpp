@@ -14,6 +14,6 @@ public:
 	virtual ~Animal();
 	std::string getType() const;
 	void setType(std::string t);
-	virtual void makeSound() = 0;
+	virtual void makeSound() const = 0;
 };
 #endif
